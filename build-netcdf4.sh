@@ -2,7 +2,7 @@
 
 prefix=/opt/local
 PREFIX=/Users/andy/local
-N=8
+N=4
 
 CC=$PREFIX/bin/h5pcc ./configure \
     --prefix=$PREFIX \

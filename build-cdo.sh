@@ -3,7 +3,7 @@
 prefix=/opt/local
 mpiprefix=/Users/andy/local-mpi
 PREFIX=/Users/andy/local
-N=8
+N=4
 
 CC=${mpiprefix}/bin/mpicc CXX=${mpiprefix}/bin/mpicxx CFLAGS='-fopenmp' CPPFLAGS='-I/usr/include/malloc -I/opt/local/include/udunits2' ./configure --prefix=$PREFIX \
     --with-netcdf=${PREFIX} \
