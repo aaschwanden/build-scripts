@@ -1,0 +1,35 @@
+py27-numpy wget \
+git-core +bash_completion +svn \
+hdf5-18 netcdf \
+ncview gsl fftw-3 libproj4 cmake \
+GitX \
+py27-ipython +notebook +pyqt4 +parallel \
+py27-pyproj \
+py27-cython \
+nco \
+swig swig-python \
+py27-netcdf4 \
+xinit doxygen \
+py27-matplotlib \
+py27-matplotlib-basemap \
+gdal +expat+geos+netcdf+python27 \
+py27-pandas \
+py27-wxpython30  \
+udunits2 \
+vtk5 +python27 \
+openmpi \
+scons \
+f2c
+
+# hdf5-18 +openmpi +threadsafe +fortran \
+# netcdf  +openmpi \
+
+# for hpgl:
+
+
+sudo port install autogen readline pkgconfig libxml2 libtool \
+ gmp zlib python27 py27-numpy bzr \
+ ginac boost +python27 +openmpi vtk5 +python27 -x11 -tcltk \
+ suitesparse py27-scientific cppunit openmpi pcre swig-python py27-ply
+
+PYTHON_INCLUDE_DIR=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/ PYTHON_LIBRARY=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib ./dorsal.sh
