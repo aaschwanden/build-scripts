@@ -7,5 +7,5 @@ tar -zxvf clapack-3.1.1.1.tgz
 cd CLAPACK-3.1.1.1
 cp make.inc.example make.inc
 make -j $N
-cd ..
+cd ../src
 scons -j $N
