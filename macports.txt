@@ -18,6 +18,7 @@ py27-pandas \
 udunits2 \
 vtk5 +python27 \
 openmpi \
+ffmpeg +nonfree \
 scons \
 f2c
 
