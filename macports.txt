@@ -15,6 +15,7 @@ py27-matplotlib \
 py27-matplotlib-basemap \
 gdal +expat+geos+netcdf+python27 \
 py27-pandas \
+py27-pil \
 udunits2 \
 vtk5 +python27 \
 openmpi \
