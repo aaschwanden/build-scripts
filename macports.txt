@@ -14,6 +14,7 @@ xinit doxygen \
 py27-matplotlib \
 py27-matplotlib-basemap \
 gdal +expat+geos+netcdf+python27 \
+py27-statsmodels py27-acor \
 py27-pandas \
 py27-pil \
 udunits2 \
@@ -21,7 +22,8 @@ vtk5 +python27 \
 openmpi \
 ffmpeg +nonfree \
 scons \
-f2c aspell  aspell-dict-en
+f2c aspell  aspell-dict-en \
+py27-pyqt4-devel qgis
 
 # hdf5-18 +openmpi +threadsafe +fortran \
 # netcdf  +openmpi \
