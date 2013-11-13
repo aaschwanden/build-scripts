@@ -1,29 +1,31 @@
-py27-numpy wget \
-git-core +bash_completion +svn \
-hdf5-18 netcdf \
-ncview gsl fftw-3 proj47 cmake \
-GitX \
-py27-ipython +notebook +pyside +parallel \
-py27-pyproj \
-py27-cython \
-nco \
-boost \
-swig swig-python \
-py27-netcdf4 \
-xinit doxygen \
-py27-matplotlib \
-py27-matplotlib-basemap \
-gdal +expat+geos+netcdf+python27 \
-py27-statsmodels py27-acor \
-py27-pandas \
-py27-pil \
-udunits2 \
-vtk5 +python27 \
-openmpi \
-ffmpeg +nonfree \
-scons \
-f2c aspell  aspell-dict-en \
-py27-pyqt4-devel qgis
+sudo port -v install \
+     py27-numpy wget \
+     git-core +bash_completion +svn \
+     hdf5-18 +openmpi +threadsafe +fortran \
+     netcdf +openmpi \
+     ncview gsl fftw-3 proj47 cmake \
+     GitX \
+     py27-ipython +notebook +pyside +parallel \
+     py27-pyproj \
+     py27-cython py27-pyflakes \
+     nco \
+     boost +no_single+no_static+openmpi+python27 \
+     swig swig-python \
+     py27-netcdf4 \
+     xinit doxygen graphviz \
+     py27-matplotlib \
+     py27-matplotlib-basemap \
+     gdal +expat+geos+netcdf+python27 \
+     py27-statsmodels py27-acor \
+     py27-pandas \
+     py27-pil \
+     udunits2 \
+     vtk5 +python27 \
+     openmpi \
+     ffmpeg +nonfree \
+     scons \
+     f2c aspell  aspell-dict-en \
+     py27-pyqt4-devel qgis +grass
 
 # hdf5-18 +openmpi +threadsafe +fortran \
 # netcdf  +openmpi \
