@@ -1,15 +1,19 @@
 sudo port -v install \
+     gcc47 gcc48 \
+     mpich-default \
+     hdf5-18 +mpich +threadsafe \
      py27-numpy wget \
      git-core +bash_completion +svn \
-     hdf5-18 +openmpi +threadsafe +fortran \
-     netcdf +openmpi \
+     netcdf +mpich \
      ncview gsl fftw-3 proj47 cmake \
      GitX \
+     emacs-mac-app \
      py27-ipython +notebook +pyside +parallel \
      py27-pyproj \
+     py27-scipy \
      py27-cython py27-pyflakes \
      nco \
-     boost +no_single+no_static+openmpi+python27 \
+     boost +no_single+no_static+mpich+python27 \
      swig swig-python \
      py27-netcdf4 \
      xinit doxygen graphviz \
@@ -19,23 +23,20 @@ sudo port -v install \
      py27-statsmodels py27-acor \
      py27-pandas \
      py27-pil \
+     mercurial \
      udunits2 \
      vtk5 +python27 \
-     openmpi \
      ffmpeg +nonfree \
      scons \
      f2c aspell  aspell-dict-en \
      py27-pyqt4-devel qgis +grass
 
-# hdf5-18 +openmpi +threadsafe +fortran \
-# netcdf  +openmpi \
 
-# for hpgl:
 
 
 sudo port install autogen readline pkgconfig libxml2 libtool \
- gmp zlib python27 py27-numpy bzr \
- ginac boost +python27 +openmpi vtk5 +python27 -x11 -tcltk \
- suitesparse py27-scientific cppunit openmpi pcre swig-python py27-ply
+ gmp zlib bzr \
+ ginac \
+ suitesparse py27-scientific cppunit pcre swig-python py27-ply
 
 PYTHON_INCLUDE_DIR=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/ PYTHON_LIBRARY=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib ./dorsal.sh
