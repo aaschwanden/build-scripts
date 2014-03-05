@@ -29,8 +29,9 @@ sudo port -v install \
      ffmpeg +nonfree \
      scons \
      f2c aspell  aspell-dict-en \
-     py27-pyqt4-devel qgis +grass
-
+     grass -python26 +python27 \
+     py27-pyqt4-devel qgis +grass \
+     py27-virtualenv
 
 
 
