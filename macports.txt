@@ -3,7 +3,6 @@ sudo port -v install \
      mpich-default \
      hdf5-18 +mpich +threadsafe \
      py27-numpy wget \
-     py27-cython \
      git-core +bash_completion +svn \
      netcdf +mpich \
      ncview gsl fftw-3 proj47 cmake \
@@ -11,7 +10,7 @@ sudo port -v install \
      emacs-mac-app \
      py27-ipython +notebook +pyside +parallel \
      py27-pyproj \
-     py27-scipy \
+     py27-scipy py27-shapely \
      py27-cython py27-pyflakes \
      nco \
      boost +no_single+no_static+mpich+python27 \
