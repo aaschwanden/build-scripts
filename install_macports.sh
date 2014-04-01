@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo port -v install \
      gcc47 gcc48 \
      mpich-default \
@@ -33,6 +35,9 @@ sudo port -v install \
      py27-pyqt4 qgis +grass \
      Py27-virtualenv
 
+
+
+exit
 
 
 sudo port install autogen readline pkgconfig libxml2 libtool \
