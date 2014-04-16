@@ -39,10 +39,9 @@ sudo port -v install \
 
 exit
 
+# DOLFIN:
 
-sudo port install autogen readline pkgconfig libxml2 libtool \
- gmp zlib bzr \
- ginac \
- suitesparse py27-scientific cppunit pcre swig-python py27-ply
+# for mumps, you need to edit the port file: remove the -fPIC flag as clang now hard errors on this
 
-PYTHON_INCLUDE_DIR=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7/ PYTHON_LIBRARY=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib ./dorsal.sh
+sudo port -v install mumps +mpich +gfortran  petsc  +mumps +suitsparse +parmetis +sundials boost +mpich eigen3 dolfin
+
