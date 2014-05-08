@@ -35,6 +35,7 @@ sudo port -v install \
     grass -python26 +python27 \
     py27-pyqt4 qgis +grass \
     opencv +python27 +qt4 \
+    py27-scikit-image \
     Py27-virtualenv
 
 
