@@ -20,8 +20,7 @@ sudo port -v install \
     py27-netcdf4 \
     xinit doxygen graphviz \
     py27-matplotlib \
-    py27-matplotlib-basemap \
-    gdal +expat+geos+netcdf+python27 \
+    gdal +expat+geos+netcdf+python27+opencl \
     py27-statsmodels py27-acor \
     py27-pandas \
     py27-pil \
