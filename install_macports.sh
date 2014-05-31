@@ -8,7 +8,6 @@ sudo port -v install \
     git-core +bash_completion +svn \
     netcdf +mpich \
     ncview gsl fftw-3 proj47 cmake \
-    GitX \
     emacs-mac-app \
     py27-ipython +notebook +pyside +parallel \
     py27-pyproj \
@@ -41,9 +40,11 @@ sudo port -v install \
 
 exit
 
+# Grass currently doesn't compile.
+
 # DOLFIN:
 
 # for mumps, you need to edit the port file: remove the -fPIC flag as clang now hard errors on this
 
-sudo port -v install cppunit metis +openmp +gfortran superlu_dist +mpich sundials mumps +mpich +gfortran  petsc +parmetis +gfortran +mumps +suitsparse  +sundials boost +mpich eigen3 dolfin
+sudo port -v install cppunit metis +openmp +gfortran superlu_dist +mpich sundials mumps +mpich +gfortran  petsc +parmetis +gfortran +mumps +suitsparse  boost +mpich eigen3 dolfin
 
