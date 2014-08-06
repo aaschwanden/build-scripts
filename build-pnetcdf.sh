@@ -2,9 +2,9 @@
 
 prefix=/opt/local
 PREFIX=/Users/andy/local
-N=8
+N=4
 
-MPICC=${prefix}/bin/openmpicc MPICXX=${prefix}/bin/openmpicxx ./configure \
+./configure \
     --prefix=$PREFIX --disable-fortran 2>&1 | tee configure.log
 
 make -j $N  2>&1 | tee compile.log
