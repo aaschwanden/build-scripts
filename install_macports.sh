@@ -47,5 +47,10 @@ exit
 
 # for mumps, you need to edit the port file: remove the -fPIC flag as clang now hard errors on this
 
-sudo port -v install cppunit metis +openmp +gfortran superlu_dist +mpich sundials mumps +mpich +gfortran  petsc +parmetis +gfortran +mumps +suitsparse  boost +mpich eigen3 dolfin
+sudo port -v install cppunit metis +openmp +gfortran superlu_dist +mpich sundials mumps +mpich +gfortran  petsc +parmetis +gfortran +mumps   boost +mpich eigen3 scotch dolfin +parmetis +scotch
+
+# petsc doesn't compile with suitesparse
+# dolfin doesn't compile with
+
+petsc +parmetis +gfortran +mumps +superlu_dist +suitesparse
 
