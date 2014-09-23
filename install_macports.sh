@@ -3,7 +3,7 @@
 sudo port -v install \
     gcc47 gcc48 \
     mpich-default \
-    hdf5-18 +mpich +threadsafe \
+    hdf5 +mpich +threadsafe \
     py27-numpy wget \
     git-core +bash_completion +svn \
     netcdf +mpich \
@@ -29,6 +29,7 @@ sudo port -v install \
     vtk5 +python27 \
     ffmpeg +nonfree \
     scons \
+    fondu \
     f2c aspell  aspell-dict-en \
     grass -python26 +python27 \
     py27-pyqt4 qgis +grass \
