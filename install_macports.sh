@@ -30,12 +30,13 @@ sudo port -v install \
     ffmpeg +nonfree \
     scons \
     fondu \
+    saga py27-saga \
     f2c aspell  aspell-dict-en \
     grass -python26 +python27 \
     py27-pyqt4 qgis +grass \
     opencv +python27 +qt4 \
     py27-scikit-image \
-    Py27-virtualenv
+    py27-virtualenv
 
 
 
