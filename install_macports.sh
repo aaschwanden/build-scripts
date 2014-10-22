@@ -19,7 +19,7 @@ sudo port -v install \
     py27-netcdf4 \
     xinit doxygen graphviz \
     py27-matplotlib \
-    gdal +expat+geos+netcdf+python27 \
+    gdal +expat+geos+hdf5+netcdf+python27 \
     py27-statsmodels py27-acor \
     py27-pandas \
     py27-pil \
@@ -30,7 +30,7 @@ sudo port -v install \
     ffmpeg +nonfree \
     scons \
     fondu \
-    saga py27-saga \
+    saga +python27 py27-saga \
     f2c aspell  aspell-dict-en \
     grass -python26 +python27 \
     py27-pyqt4 qgis +grass \
