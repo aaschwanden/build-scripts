@@ -11,8 +11,7 @@ sudo port -v install \ gcc47 gcc48 \ mpich-default \ hdf5 +mpich
     \ mercurial \ udunits2 \ vtk5 +python27 \ ffmpeg +nonfree \ scons
     \ fondu \ saga +python27 py27-saga \ f2c aspell aspell-dict-en \
     grass -python26 +python27 \ py27-pyqt4 qgis +grass \ opencv
-    +python27 +qt4 \ py27-scikits-module py27-scikit-image \ py27-virtualenv
-
+    +python27 +qt4 \ py27-scikits-module py27-scikit-image \ py27-virtualenv orfeotoolbox
 
 
 exit
