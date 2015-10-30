@@ -5,7 +5,7 @@ mpiprefix=/Users/andy/local-mpi
 PREFIX=/Users/andy/local
 N=4
 
-CC=${mpiprefix}/bin/mpicc CXX=${mpiprefix}/bin/mpicxx ./configure \
+CC=${prefix}/bin/mpicc CXX=${prefix}/bin/mpicxx ./configure \
     --prefix=$PREFIX \
     --enable-threadsafe --with-pthread --enable-production \
     --enable-shared  --enable-static --enable-cxx \

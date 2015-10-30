@@ -1,8 +1,41 @@
 #!/bin/bash
 
 sudo port -v install \
-    	hdf5 +mpich +threadsafe \
-	
+    mpich-default \
+    hdf5 +mpich +threadsafe \
+    netcdf +mpich \
+    proj \
+    py27-numpy \
+    git +bash_completion +svn \
+    ncview \
+    gsl \
+    fftw-3 \
+    cmake \
+    wget \
+    emacs-app \
+    py27-jupyter +qtconsole \
+    py27-pyproj \
+    py27-scipy \
+    py27-shapely \
+    py27-cython \
+    py27-netcdf4 \
+    py27-matplotlib-basemap \
+    gdal +expat+geos+grib+hdf5+mpich+netcdf+spatialite+sqlite3 \
+    py27-fiona \
+    nco \
+    swig \
+    swig-python \
+    qgis +grass \
+    xorg-libXt +flat_namepsace \
+    R \
+    R-app \
+    fondu \
+
+    qca-ossl
+
+
+sudo port -v select --set mpi mpich-mp-fortran
+
 
 sudo port -v install \ gcc47 gcc48 \ mpich-default \
      	hdf5 +mpich +threadsafe \

@@ -5,10 +5,10 @@ mpiprefix=/Users/andy/local-mpi
 PREFIX=/Users/andy/local
 N=4
 
-CC=${mpiprefix}/bin/mpicc CXX=${mpiprefix}/bin/mpicxx CFLAGS='-fopenmp' CPPFLAGS='-I/usr/include/malloc -I/opt/local/include/udunits2' ./configure --prefix=$PREFIX \
+CC=${prefix}/bin/mpicc CXX=${prefix}/bin/mpicxx CFLAGS='-fopenmp' CPPFLAGS='-I/usr/include/malloc -I/opt/local/include/udunits2' ./configure --prefix=$PREFIX \
     --with-netcdf=${PREFIX} \
     --with-hdf5=${PREFIX} \
-    --with-proj=${prefix}/lib/proj47 \
+    --with-proj=${prefix}/lib/proj \
     --with-udunits2=${prefix} \
     --with-zlib=${prefix} 2>&1 | tee configure.log
 
