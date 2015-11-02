@@ -22,6 +22,8 @@ sudo port -v install \
     py27-matplotlib-basemap \
     gdal +expat+geos+grib+hdf5+mpich+netcdf+spatialite+sqlite3 \
     py27-fiona \
+    py27-rtree \
+    py27-unidecode \
     nco \
     swig \
     swig-python \
