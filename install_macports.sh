@@ -24,6 +24,9 @@ sudo port -v install \
     py27-fiona \
     py27-rtree \
     py27-unidecode \
+    py27-tables +mpich \
+    py27-statsmodels \
+    py27-pandas \
     nco \
     swig \
     swig-python \
