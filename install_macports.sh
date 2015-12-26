@@ -13,7 +13,7 @@ sudo port -v install \
     cmake \
     wget \
     emacs-app \
-    aspell aspell-dict-de aspell-dict-de-alt \
+    aspell aspell-dict-en aspell-dict-de aspell-dict-de-alt \
     py27-jupyter +qtconsole \
     py27-pyproj \
     py27-scipy \
