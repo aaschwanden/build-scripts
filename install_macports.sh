@@ -14,6 +14,8 @@ sudo port -v install \
     wget \
     emacs-app \
     aspell aspell-dict-en aspell-dict-de aspell-dict-de-alt \
+    py27-unidecode \
+    py27-statsmodels \
     py27-jupyter +qtconsole \
     py27-pyproj \
     py27-scipy \
@@ -29,6 +31,7 @@ sudo port -v install \
     py27-statsmodels \
     py27-pandas \
     nco \
+    screen \
     swig \
     swig-python \
     qgis +grass \
