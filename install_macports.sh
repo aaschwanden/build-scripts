@@ -16,6 +16,8 @@ sudo port -v install \
     aspell aspell-dict-en aspell-dict-de aspell-dict-de-alt \
     py27-unidecode \
     py27-statsmodels \
+    py27-pip \
+    py27-autopep8 \
     py27-jupyter +qtconsole \
     py27-pyproj \
     py27-scipy \
@@ -39,7 +41,6 @@ sudo port -v install \
     R \
     R-app \
     fondu \
-
     qca-ossl
 
 
@@ -88,7 +89,16 @@ exit
 
 # for mumps, you need to edit the port file: remove the -fPIC flag as clang now hard errors on this
 
-sudo port -vs install cppunit metis +openmp +gfortran superlu_dist +mpich sundials mumps +mpich +gfortran  petsc +parmetis +gfortran +mumps +suitesparse  boost +mpich eigen3 scotch dolfin +parmetis +scotch +petsc +mpich +suitesparse +hdf5
+sudo port -vs install cppunit metis +openmp superlu_dist +mpich sundials mumps +mpich +gfortran  petsc +parmetis +gfortran +mumps +suitesparse  boost +mpich eigen3 scotch dolfin +parmetis +scotch +petsc +mpich +suitesparse +hdf5
+
+sudo port -vs install  boost +mpich metis parmetis mumps superlu_dist petsc +parmetis +gfortran +mumps +suitesparse dolfin +parmetis +scotch +petsc +suitesparse
+
+#need to add vtk7 variant
+
+variant vtk7 description {Build with vtk7} {
+        depends_lib-append  port:vtk
+        depends_lib-delete  port:vtk5
+        }
 
 # petsc doesn't compile with suitesparse
 # dolfin doesn't compile with
