@@ -5,7 +5,7 @@ mpiprefix=/Users/andy/local-mpi
 PREFIX=/Users/andy/local
 N=4
 ver=1.7.1
-b
+
 wget -nc https://code.zmaw.de/attachments/download/12070/cdo-${ver}.tar.gz
 tar -zxvf cdo-${ver}.tar.gz
 cd cdo-${ver}
