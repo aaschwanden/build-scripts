@@ -1,6 +1,37 @@
 #!/bin/bash
 
 sudo port -v install \
+     hdf5-18 +mpich +threadsafe
+     netcdf +mpich \
+     ncview \
+     git +bash_completion +svn \
+     grass7 \
+     nco +mpich \
+     qgis  +grass \
+     py27-jupyter +qtconsole \
+     py27-pip \
+     py27-autopep8 \
+     py27-pyproj \
+     py27-scipy \
+     py27-shapely \
+     py27-cython \
+     py27-netcdf4 +mpich \
+     py27-matplotlib-basemap \
+     wget \
+     emacs-app \
+     aspell aspell-dict-en aspell-dict-de aspell-dict-de-alt \
+     py27-numpy \
+     py27-unidecode \
+     py27-statsmodels \
+     py27-pip \
+     py27-pandas \
+     py27-fiona \
+     fondu
+     
+
+
+
+sudo port -v install \
     mpich-default \
     hdf5 +mpich +threadsafe \
     netcdf +mpich \
@@ -25,7 +56,7 @@ sudo port -v install \
     py27-cython \
     py27-netcdf4 \
     py27-matplotlib-basemap \
-    gdal +expat+geos+grib+hdf5+mpich+netcdf+spatialite+sqlite3 \
+    gdal +expat+geos+grib+mpich+netcdf+spatialite+sqlite3 \
     py27-fiona \
     py27-rtree \
     py27-unidecode \
@@ -80,6 +111,12 @@ sudo port -v install \ gcc47 gcc48 \ mpich-default \ hdf5 +mpich
     +python27 +qt4 \ py27-scikits-module py27-scikit-image \ py27-virtualenv orfeotoolbox
 
 
+
+    R for QGIS, packages are needed and installed as sudo
+
+    $ sudo R
+    install.packages('automap')
+    rgdal, raster, rgl, spatstat, maptools, pls, rgeos
 
 exit
 

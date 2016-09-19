@@ -4,10 +4,10 @@ prefix=/opt/local
 PREFIX=/Users/andy/local
 N=4
 
-wget -nc ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-4.3.3.1.tar.gz
-tar -zxvf netcdf-4.3.3.1.tar.gz
+wget -nc ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-4.4.1.tar.gz
+tar -zxvf netcdf-4.4.1.tar.gz
 
-cd netcdf-4.3.3.1
+cd netcdf-4.4.1
 
 CC=$PREFIX/bin/h5pcc ./configure \
     --prefix=$PREFIX \

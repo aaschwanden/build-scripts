@@ -5,10 +5,10 @@ mpiprefix=/Users/andy/local-mpi
 PREFIX=/Users/andy/local
 N=4
 
-wget -nc http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.15-patch1.tar
-tar -xvf hdf5-1.8.15-patch1.tar
+wget -nc https://www.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8.16/src/hdf5-1.8.16.tar
+tar -xvf hdf5-1.8.16.tar
 
-cd hdf5-1.8.15-patch1
+cd hdf5-1.8.16
 
 CC=${mpiprefix}/bin/mpicc CXX=${mpiprefix}/bin/mpicxx ./configure \
     --prefix=$PREFIX \
