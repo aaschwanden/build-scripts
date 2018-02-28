@@ -45,11 +45,9 @@ sudo port -v install \
      parmetis -mpich +mpich_devel +clang50 \
      suitesparse +clang50 \
      superlu_dist -mpich +mpich_devel +clang50 \
-     scalapack -mpich +mpich_devel +clang50b \
+     scalapack -mpich +mpich_devel +clang50 \
      petsc -mpich +mpich_devel +mumps +suitesparse +clang50 \
      dolfin +mpich_devel +hdf5 +parmetis +petsc +suitesparse
-
-
 
 
 
