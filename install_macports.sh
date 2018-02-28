@@ -7,7 +7,6 @@ sudo port -v install \
      git +bash_completion +svn \
      grass7 \
      nco +mpich \
-     qgis  +grass \
      py27-jupyter +qtconsole \
      py27-pip \
      py27-autopep8 \
@@ -26,7 +25,19 @@ sudo port -v install \
      py27-pip \
      py27-pandas \
      py27-fiona \
-     fondu
+     fondu \
+     qwt61 qt5 +qt4 \
+     qgis +grass -qt5 +qt4
+     petsc +superlu_dist +mumps +parmetis +suitsparse \
+
+ sudo port select --set autopep8 autopep8-27
+ sudo port install -s py27-cairo
+ sudo port select --set cython cython27
+ sudo port select --set ipython py27-ipython
+ sudo port select --set ipython2 py27-ipython
+ sudo port select --set pep8 pep8-27    
+ sudo port select --set pip pip27
+
      
 
 
