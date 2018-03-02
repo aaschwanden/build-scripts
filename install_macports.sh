@@ -44,6 +44,8 @@ sudo port -v install \
 sudo port select --set mpi mpich-devel-clang50-fortran
      
 sudo port -v install ld64 +ld64_xcode mumps -mpich +mpich_devel +clang50 superlu_dist -mpich +mpich_devel +clang50
+sudo port -v install petsc -mpich +mpich_devel +superlu_dist +mumps +parmetis +suitesparse +clang50
+sudo port -v install dolfin +petsc -mpich +mpich_devel +hdf5 +clang50 +parmetis
 
 
 sudo port -v install \
