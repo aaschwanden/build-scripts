@@ -33,7 +33,6 @@ sudo port -v install \
      fondu \
      qwt61 -qt5 +qt4 \
      qgis +grass -qt5 +qt4
-     petsc +superlu_dist +mumps +parmetis +suitesparse \
      py36-jupyter +qtconsole \
      py36-pip \
      py36-autopep8 \
@@ -49,7 +48,8 @@ sudo port -v install \
      py36-pip \
      py36-pandas \
      py36-fiona \
-     py36-gdal
+     py36-gdal \
+     qgis3 +grass
      
  sudo port select --set autopep8 autopep8-27
  sudo port install -s py27-cairo
@@ -64,6 +64,12 @@ sudo port select --set autopep8 autopep8-36
 sudo port select --set ipython py36-ipython
 sudo port select --set ipython3 py36-ipython
 sudo port select --set pep8 pep8-36
+sudo port select --set pip pip36
+sudo port select --set python3 python36
+sudo port select --set python python36
+sudo port select --set cython cython36
+sudo port select --set gcc mp-gcc7
+
 
 sudo port -v install ld64 +ld64_xcode mumps -mpich +mpich_devel +clang50 superlu_dist -mpich +mpich_devel +clang50
 sudo port -v install petsc -mpich +mpich_devel +superlu_dist +mumps +parmetis +suitesparse +clang50
