@@ -29,11 +29,28 @@ sudo port -v install \
      py27-pip \
      py27-pandas \
      py27-fiona \
+     py27-gdal \
      fondu \
      qwt61 -qt5 +qt4 \
      qgis +grass -qt5 +qt4
      petsc +superlu_dist +mumps +parmetis +suitesparse \
-
+     py36-jupyter +qtconsole \
+     py36-pip \
+     py36-autopep8 \
+     py36-pyproj \
+     py36-scipy \
+     py36-shapely \
+     py36-cython \
+     py36-netcdf4 +mpich_devel +clang50 \
+     py36-backports-functools_lru_cache \
+     py36-matplotlib-basemap \
+     py36-unidecode \
+     py36-statsmodels \
+     py36-pip \
+     py36-pandas \
+     py36-fiona \
+     py36-gdal
+     
  sudo port select --set autopep8 autopep8-27
  sudo port install -s py27-cairo
  sudo port select --set cython cython27
@@ -42,7 +59,12 @@ sudo port -v install \
  sudo port select --set pep8 pep8-27    
  sudo port select --set pip pip27
 sudo port select --set mpi mpich-devel-clang50-fortran
-     
+
+sudo port select --set autopep8 autopep8-36    
+sudo port select --set ipython py36-ipython
+sudo port select --set ipython3 py36-ipython
+sudo port select --set pep8 pep8-36
+
 sudo port -v install ld64 +ld64_xcode mumps -mpich +mpich_devel +clang50 superlu_dist -mpich +mpich_devel +clang50
 sudo port -v install petsc -mpich +mpich_devel +superlu_dist +mumps +parmetis +suitesparse +clang50
 sudo port -v install dolfin +petsc -mpich +mpich_devel +hdf5 +clang50 +parmetis
