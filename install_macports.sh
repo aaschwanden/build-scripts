@@ -36,23 +36,6 @@ sudo port -vN install \
      py36-pyproj \
      qgis3 +grass
      
-     py27-jupyter +qtconsole \
-     py27-pip \
-     py27-autopep8 \
-     py27-pyproj \
-     py27-scipy \
-     py27-shapely \
-     py27-cython \
-     py27-netcdf4 +mpich_devel +clang50 \
-     py27-backports-functools_lru_cache \
-     py27-matplotlib-basemap \
-     py27-unidecode \
-     py27-statsmodels \
-     py27-pip \
-     py27-pandas \
-     py27-fiona \
-     py27-gdal \
-
 
 sudo port select --set autopep8 autopep8-36    
 sudo port select --set ipython py36-ipython
