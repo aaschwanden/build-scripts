@@ -34,6 +34,7 @@ sudo port -vN install \
      py36-fiona \
      py36-gdal \
      py36-pyproj \
+     py36-unidecode \
      qgis3 +grass
      
 
