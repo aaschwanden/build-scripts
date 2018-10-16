@@ -39,7 +39,11 @@ sudo port -vN install \
      py36-fiona \
      py36-gdal \
      py36-pyproj \
+<<<<<<< HEAD
      py36-pillow \
+=======
+     py36-unidecode \
+>>>>>>> 432be918d1598d4bb3d66a4fefbe3b1d61a88ec9
      qgis3 +grass
      
 
