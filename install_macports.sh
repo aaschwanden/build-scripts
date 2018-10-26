@@ -39,11 +39,7 @@ sudo port -vN install \
      py36-fiona \
      py36-gdal \
      py36-pyproj \
-<<<<<<< HEAD
-     py36-pillow \
-=======
      py36-unidecode \
->>>>>>> 432be918d1598d4bb3d66a4fefbe3b1d61a88ec9
      qgis3 +grass
      
 
@@ -72,6 +68,7 @@ sudo port -vN install \
      parmetis -mpich +mpich_devel +clang70 \
      suitesparse +clang70 \
      superlu_dist -mpich +mpich_devel +clang70 \
+     scalapack -mpich +mpich_devel +clang70 +openblas \     
      petsc -mpich +mpich_devel +mumps +suitesparse +clang70 \
      dolfin -mpich +mpich_devel +hdf5 +parmetis +petsc +suitesparse +clang70
 
